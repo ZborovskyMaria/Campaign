@@ -81,6 +81,30 @@
             color: #aad4b8;
             text-decoration: none;
         }
+{
+  box-sizing: border-box;
+}
+.row img {
+            height: 80px;
+        }
+.columnR {
+  float: right;
+  padding: 10px;
+}
+.columnL {
+  float: left;
+  padding: 10px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
         @media (max-width: 768px) {
             header {
                 flex-direction: column;
@@ -100,10 +124,10 @@
 </head>
 <body>
     <header>
-	 <a href="index.html"><img src="LogoRuWide.png" alt="Мария Зборовская, психотерапевт"></a>
-        <h1></h1>
-          <a href="index.html"><img src="LogoHeWide.png" alt="מריה זבורובסקי, פסיכותרפיה" style="right: 10px; left: auto;"></a>
-        <p></p>
+<div class="row"  style="width:90%;">
+  <div class="columnL"><a href="index.html"><img src="LogoRuWide.png" alt="Мария Зборовская, психотерапевт"></a></div>
+  <div class="columnR"><a href="index.html"><img src="LogoHeWide.png" alt="מריה זבורובסקי, פסיכותרפיה" style="right: 10px; left: auto;"></a></div>
+        </div>
     </header>
 
     <nav>
@@ -133,10 +157,14 @@
 <p>
 הטיפול שאני מציעה מתאים לאנשים שמרגישים תקועים, מתמודדים עם שינויים משמעותיים, או פשוט מחפשים מקום להקשיב לעצמם ולצמוח. בין אם מדובר בקשיים אישיים, זוגיים או משפחתיים, אני מזמינה אותך לצעוד יחד איתי בדרך חדשה.
 </p>
-     <p>
- <a href="index.html"><img src="AboutMeHe.png" alt="מריה זבורובסקי, פסיכותרפיה" style="right: 10px; left: auto;"></a>
-
-</p>
+     <div class="row"  style="width:90%;">
+  <div class="columnL">
+<a href="index.html"><img src="LogoHeWide.png" alt="מריה זבורובסקי, פסיכותרפיה" style="right: 10px; left: auto;"></a>
+</div>
+ <div class="columnR">
+ 
+ <a href="index.html"><img src="AboutMePicture.png" alt="מריה זבורובסקי, פסיכותרפיה" style="right: 10px; left: auto;"></a>
+</div></div>
     </section>
 
     <section id="services" class="section services">
@@ -215,10 +243,13 @@
 
 Я приглашаю вас на путь самопознания, где вы сможете обрести внутренний покой, найти личный смысл и открыть новые горизонты для своего будущего.
 </p>
-     <p>
- <a href="index.html"><img src="AboutMeRu.png" alt="Мария Зборовская, психотерапевт" style="right: 10px; left: auto;"></a>
+     <div class="row"  style="width:90%;">
+  <div class="columnL">
+ <a href="index.html"><img src="AboutMePicture.png" alt="מריה זבורובסקי, פסיכותרפיה" style="right: 10px; left: auto;"></a></div>
+ <div class="columnR">
+ <a href="index.html"><img src="LogoRuWide.png" alt="מריה זבורובסקי, פסיכותרפיה" style="right: 10px; left: auto;"></a>
 
-</p>
+</div></div>
     </section>
 
 <footer>
