@@ -4,166 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>מריה זבורובסקי, פסיכותרפיה</title>
-	<link rel="icon" type="image/x-icon" href="favicon.ico">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f8f4;
-            color: #333;
-        }
-        header {
-            background-color: #fff;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        header img {
-            height: 80px;
-        }
-	header h1 {
-    		flex-grow: 1;
-    		text-align: center;
-	}
-	h2 {
-                color: #333;
-    		flex-grow: 1;
-   	        font-size: 16px;
-	}
-
-        nav {
-	    text-align: center;
-            margin: 20px 0;
-	    font-size: 20px;
-        }
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-        }
-        .section {
-            padding: 40px;
-            text-align: center;
-	    text-align: right;
-	    direction: rtl;
-        }
-	.smallNav {
-	    text-align: center;
-            margin: 20px 0;
-	    font-size: 20px;
-		height: 25px;
-	}
-        .about {
-            background-color: #fff;
-        }
-        .services {
-            background-color: #f0f8f4;
-        }
-	.contact {
-            background-color: #f0f8f4;
-	    text-align: left;
-	    direction: ltr;
-        }
-	.clientstories {
-            background-color: #fff;
-        }
-        footer {
-            background-color: #fff;
-            color: #333;
-            text-align: center;
-            padding: 20px;
-        }
-	.footerLinks {
-		color: #333;
-            text-decoration: none;
-	}
-        .contactFooter {
-            margin-top: 20px;
-        }
-        .contact a {
-            color: #333;
-            text-decoration: none;
-        }
-{
-  box-sizing: border-box;
-}
-.row {
-wight:100%;
-}
-.row img {
-            height: 100%;
-vertical-align: bottom;
-}
-        }
-.column {
-  float: center;
-  padding: 10px;
-}
-.columnR {
-  float: right;
-  padding: 10px;
-}
-.columnL {
-  float: left;
-  padding: 10px;
-}
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-}
-        @media (max-width: 768px) {
-            header {
-                flex-direction: column;
-                text-align: center;
-            }
-            header img {
-                margin: 10px 0;
-            }
-            nav {
-                font-size: 20px;
-            }
-            .section {
-                padding: 20px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
     <header>
-	<div class="row"  style="width:90%;">
-		<div class="columnR">
-			<a href="index.html">
-			<img src="LogoHeWide.png" alt="מריה זבורובסקי, פסיכותרפיה" style="right: 10px; left: auto; vertical-align:bottom;">
-			</a>
-		</div>
-	</div>
-	<div class="row"  style="width:90%;">
-  		<div class="columnL">
-			<a href="index.html">
-			<img src="AboutMePicture.png" alt="מריה זבורובסקי, פסיכותרפיה" style="right: 10px; left: auto;">
-			</a>
-		</div>
-	</div>
-
+        <div class="language-bar">
+            <a href="indexRu.html">RU</a> | <a href="index.html">HE</a>
+        </div>
+        <a href="index.html">
+            <img src="LogoHeWide.png" alt="מריה זבורובסקי, פסיכותרפיה" style="height: 80px;">
+        </a>
+        <div class="social-icons">
+            <a href="https://wa.me/972542282839" target="_blank"><img src="whatsapp-icon.png" alt="WhatsApp"></a>
+            <a href="https://facebook.com/MariaZb.counselling" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="mailto:zborovskymaria@gmail.com"><img src="email-icon.png" alt="Email"></a>
+        </div>
     </header>
 
     <nav>
-         <a href="#about">קצת עליי</a>
-	<a href="#services">מה זה טיפול</a>
-	<a href="#clientstories">מטופלים מספרים</a>
-	<a href="#footer">צור קשר</a>
+        <span class="hamburger">&#9776;</span>
+        <div class="nav-links">
+            <a href="#about">קצת עליי</a>
+            <a href="#services">מה זה טיפול</a>
+            <a href="#clientstories">מטופלים מספרים</a>
+            <a href="#footer">צור קשר</a>
+        </div>
     </nav>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        });
+    </script>
+
 
     <section id="about" class="section about">
         <h1>קצת עליי</h1>
@@ -247,5 +123,6 @@ vertical-align: bottom;
              	<a href="https://facebook.com/MariaZb.counselling" target="_blank">לעמוד פייסבוק</a>
         </p>
     </footer>
+
 </body>
 </html>
