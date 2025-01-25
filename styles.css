@@ -5,6 +5,16 @@ body {
     background-color: #f0f8f4;
     color: #333;
 }
+h1 {
+    		flex-grow: 1;
+    		text-align: right;
+}
+h2 {
+                color: #333;
+    		flex-grow: 1;
+   	        font-size: 16px;
+}
+
 header {
     background-color: #fff;
     color: #333;
@@ -50,6 +60,7 @@ nav a {
     cursor: pointer;
 }
 .nav-links {
+	direction: rtl;
     display: flex;
     justify-content: center;
 }
