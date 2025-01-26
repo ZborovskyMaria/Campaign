@@ -1,0 +1,152 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f0f8f4;
+	color: #333;
+}
+h1 {
+	flex-grow: 1;
+	text-align: right;
+}
+h2 {
+	color: #333;
+	flex-grow: 1;
+	font-size: 16px;
+}
+
+header {
+	background-color: #fff;
+	color: #333;
+	padding: 10px 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+header .language-bar {
+	font-size: 16px;
+}
+header .language-bar a {
+	margin: 0 10px;
+	text-decoration: none;
+	color: #333;
+}
+header .social-icons {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+}
+header .social-icons a {
+	text-decoration: none;
+}
+header .social-icons img {
+	width: 24px;
+	height: 24px;
+}
+nav {
+	text-align: center;
+	margin: 20px 0;
+	font-size: 20px;
+}
+nav a {
+	margin: 0 15px;
+	text-decoration: none;
+	color: #333;
+	font-weight: bold;
+}
+.hamburger {
+	display: none;
+	font-size: 24px;
+	cursor: pointer;
+}
+.nav-links {
+	direction: rtl;
+	display: flex;
+	justify-content: center;
+}
+.nav-links.show {
+	justify-content: center;
+	flex-direction: column;
+	gap: 3vw;
+	display: flex;
+}
+.section {
+	padding: 40px;
+	text-align: center;
+	text-align: right;
+	direction: rtl;
+}
+
+.about {
+	background-color: #fff;
+}
+.services {
+	background-color: #f0f8f4;
+}
+.contact {
+	background-color: #f0f8f4;
+	text-align: left;
+	direction: ltr;
+}
+.clientStories {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #fff;
+}
+footer {
+	background-color: #fff;
+	color: #333;
+	text-align: center;
+	padding: 20px;
+}
+.footerLinks {
+	color: #333;
+	text-decoration: none;
+}
+.contactFooter {
+	margin-top: 20px;
+}
+.contact a {
+	color: #333;
+	text-decoration: none;
+}
+.column {
+	float: center;
+	padding: 10px;
+}
+.columnR {
+	float: right;
+	padding: 10px;
+}
+.columnL {
+	float: left;
+	padding: 10px;
+}
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+@media (max-width: 768px) {
+	nav {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: end;
+	}
+	.nav-links {
+		display: none;
+	}
+	.hamburger {
+		justify-self: flex-start;
+		display: block;
+		width: 10vw;
+		margin-right: 5vw;
+		margin-bottom: 2vh;
+	}
+	.recommendations {
+		width: 95vw;
+	}
+}
