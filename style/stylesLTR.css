@@ -1,12 +1,12 @@
 body {
 	font-family: Arial, sans-serif;
-
 	text-align: left;
 	direction: ltr;
 	margin: 0;
 	padding: 0;
 	background-color: #f0f8f4;
 	color: #333;
+  	line-height: 1.8;
 }
 h1 {
 	flex-grow: 1;
@@ -17,7 +17,6 @@ h2 {
 	flex-grow: 1;
 	font-size: 16px;
 }
-
 header {
 	background-color: #fff;
 	color: #333;
@@ -28,6 +27,7 @@ header {
 }
 header .language-bar {
 	font-size: 16px;
+	
 }
 header .language-bar a {
 	margin: 0 10px;
@@ -63,7 +63,7 @@ nav a {
 	cursor: pointer;
 }
 .nav-links {
-	direction: rtl;
+	direction: ltr;
 	display: flex;
 	justify-content: center;
 }
@@ -106,10 +106,21 @@ footer {
 }
 .contactFooter {
 	margin-top: 20px;
+	direction: ltr;
+}
+.contactFooter img {
+	height: 18px;
+	margin: -5px 5px;
+}
+.contactFooter a {
+	color: #333;
 }
 .contact a {
-	color: #333;
+	color: #333 !important;
 	text-decoration: none;
+}
+.row {
+	width: 90%;
 }
 .column {
 	float: center;
@@ -128,6 +139,12 @@ footer {
 	display: table;
 	clear: both;
 }
+	.copyright {
+		text-align: right; 
+		color:#333; 
+		font-size: 11px; 
+		font-weight: bold;
+	}
 
 @media (max-width: 768px) {
 	nav {
